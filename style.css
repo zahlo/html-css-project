@@ -324,6 +324,7 @@ footer {
     margin-top: 20px;
     text-align: center;
 }
+/* mobile */
 
 @media (max-width: 768px) {
     header {
@@ -403,6 +404,9 @@ footer {
         margin-bottom: 20px;
     }
 
+    .btn {
+        margin-right: 100px;
+    }
     .stats h2 {
         font-size: 3em;
     }
@@ -422,86 +426,89 @@ footer {
         margin-bottom: 20px;
         margin-right: 0;
     }
+    .footer-content {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .footer-links ul li {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .footer-subscribe form {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .footer-subscribe input {
+        width: 100%; 
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    .footer-social ul {
+        margin-left: 0; 
+
+    .footer-social ul li {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
 }
 
-@media (min-width: 769px) {
-    body {
-        font-size: 18px;
-    }
+}
 
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     header {
-        font-size: 24px;
-    }
-
-    .container {
-        margin-top: 50px;
+        font-size: 18px; 
     }
 
     .intro {
-        width: 60%;
-        margin: 0 auto;
-        text-align: center;
+        width: 80%; 
     }
 
-    .title h2 {
-        margin-bottom: 20px;
-    }
-
-    .news {
-        flex-direction: row;
-    }
-
-    .cards {
-        max-width: 350px;
-        margin: 80px;
-        margin-bottom: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    #Squad {
-        padding: 30px 0px;
-    }
-
-    .squad {
-        flex-direction: row;
+    .container {
+        padding: 30px 0; 
     }
 
     .players-card {
-        width: 10%;
-        margin-bottom: 20px;
+        width: 25%; 
+        margin-bottom: 20px; 
+        padding: 10px; 
     }
 
-    #stats {
-        padding: 100px 0px;
+    .players-card img {
+        width: 100%; 
+        max-width: 120px; 
+        height: auto; 
     }
 
-    #stats .stats {
-        flex-direction: row;
+    
+}
+
+/* Desktop  */
+@media only screen and (min-width: 1201px) {
+    header {
+        font-size: 24px; 
     }
 
-    #stats .stats div {
-        text-align: center;
+    .intro {
+        width: 60%; 
     }
 
-    #stats .stats h2 {
-        font-size: 4em;
-        margin-top: 20px;
-    } 
-
-    #history {
-        padding: 50px 0px;
+    .container {
+        padding: 70px 0; 
     }
 
-    .history-content {
-        width: 60%;
-        text-align: center;
-        margin-left: 300px;
+    .players-card {
+        width: 15%; 
+        margin-bottom: 30px; 
+        padding: 15px; 
     }
 
-    .history-content p {
-        font-size: 20px;
-        margin-bottom: 20px;
-        margin-right: 80px;
+    .players-card img {
+        width: 100%; 
+        max-width: 150px; 
+        height: auto; 
     }
 }
